@@ -1,0 +1,14 @@
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8888"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+
+welcome:
+  greeting: "Hello from the Client Service!"
+personal:
+  email: 'juta@juta.com'
